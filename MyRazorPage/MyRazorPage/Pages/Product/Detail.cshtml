@@ -7,7 +7,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <div id="content-detail">
     <div id="content-title">
-        <a asp-page="/index">Home ></a> 
+        <a asp-page="/index">Home ></a>
         <a asp-page="/index">Category @Model.Product.CategoryId</a> >
         Model: @Model.Product.ProductName
     </div>
@@ -17,30 +17,38 @@
             <div id="product-detail">
                 <div id="product-detail-left">
                     <div id="product-img">
-                        <img src="~/img/1.jpg" />
+                        <img alt="null" src="~/img/@Model.MainImage" />
                     </div>
                     <div id="product-img-items">
-                        <div><a href="#"><img src="~/img/1.jpg" /></a></div>
-                        <div><a href="#"><img src="~/img/1.jpg" /></a></div>
-                        <div><a href="#"><img src="~/img/1.jpg" /></a></div>
-                        <div><a href="#"><img src="~/img/1.jpg" /></a></div>
+                        @if (Model.imageSplit != null)
+                        {
+                            @foreach (var item in Model.imageSplit)
+                            {
+                                <div>
+                                    <img src="~/img/@item" alt="null" />
+                                </div>
+                            }
+                        }
                     </div>
                 </div>
                 <div id="product-detail-right">
                     <div id="product-detail-right-content">
                         <div id="product-price">@Model.Product.UnitPrice</div>
-                        @if(Model.Product.UnitsInStock == 0){
+                        @if (Model.Product.UnitsInStock == 0)
+                        {
                             <div id="product-status">Out of stock</div>
-                        }else{
+                        }
+                        else
+                        {
                             <div id="product-status">In stock</div>
                         }
-                        
+
                         <div id="product-detail-buttons">
                             <div id="product-detail-button">
-                                <input  type="button" value="BUY NOW">
-                                <a  asp-page="/account/cart" asp-page-handler="AddToCartHandle"  asp-route-pid="@Model.Product.ProductId"  class="btn btn-info"
-                                    style="background-color: #fff;
-                                    color:red;border: 1px solid gray; width: 300px; height:39px;">ADD TO CART</a>                             
+                                <input type="button" value="BUY NOW">
+                                <a asp-page="/account/cart" asp-page-handler="AddToCartHandle" asp-route-pid="@Model.Product.ProductId" class="btn btn-info"
+                                   style="background-color: #fff;
+                                    color:red;border: 1px solid gray; width: 300px; height:39px;">ADD TO CART</a>
                             </div>
                         </div>
                     </div>
@@ -59,4 +67,33 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    var imgWrap = document.getElementById("product-img");
+    var listDivImg = document.querySelectorAll("#product-img-items div");
+    let currentIndex = 0
 
+    setCurrent(currentIndex)
+
+    function setCurrent(index) {
+        currentIndex = index
+        imgWrap.src = listDivImg[currentIndex].querySelector('img').src
+
+        // remove all active img
+        listDivImg.forEach((item) => {
+            item.classList.remove('active')
+        })
+
+        // set active
+        listDivImg[currentIndex].classList.add('active')
+    }
+
+    listDivImg.forEach((img, index) => {
+        img.addEventListener('click', (e) => {
+            setCurrent(index)
+        })
+    })
+
+
+
+
+</script>

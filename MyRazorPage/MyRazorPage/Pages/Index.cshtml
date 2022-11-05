@@ -46,7 +46,7 @@
         @foreach (var item in Model.NewProducts)
         {
             <div style="width:22%" class="product">
-                <a asp-page="/product/detail" asp-route-pid="@item.ProductId"><img src="img/1.jpg" width="100%" /></a>
+                <a asp-page="/product/detail" asp-route-pid="@item.ProductId"><img src="img/phone1.jpg" width="100%" /></a>
                 <div class="name"><a asp-page="/product/detail" asp-route-pid="@item.ProductId">@item.ProductName</a></div>
                 <div class="price">@item.UnitPrice</div>
                 <div><a asp-page="/account/cart" asp-route-pid="@item.ProductId">Buy now</a></div>

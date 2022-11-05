@@ -14,9 +14,22 @@ namespace MyRazorPage.Pages.Product
         }
         [BindProperty]
         public Models.Product Product { get; set; }
+        [BindProperty]
+        public string MainImage { get; set; }
+        [BindProperty]
+        public string[] imageSplit { get; set; }
+       
         public void OnGet(int? pid)
         {
             Product = db.Products.Find(pid);
+            var productImages = Product.ProductImage;
+            if(productImages != null)
+            {
+                imageSplit = Convert.ToString(productImages).Split(",");
+                MainImage = imageSplit[0];
+            }               
+            
+            
 
         }
     }
