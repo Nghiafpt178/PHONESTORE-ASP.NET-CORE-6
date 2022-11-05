@@ -5,10 +5,16 @@
     string key = "CartCookie";
     var cooieValue = Request.Cookies[key];
     var CartItemsCookie = new List<CartItem>();
-    if(cooieValue != null){
+    decimal totalPrice = 0;
+    if (cooieValue != null)
+    {
         CartItemsCookie = JsonSerializer.Deserialize<List<CartItem>>(cooieValue);
+        foreach (var p in CartItemsCookie)
+        {
+            totalPrice += p.TotalPrice;
+        }
     }
-    
+
 }
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -55,7 +61,7 @@
                     </div>
                 }
             }
-           
+
         }
         else
         {
@@ -63,7 +69,7 @@
         }
     </div>
     <div id="cart-summary">
-        <div id="cart-summary-content">Total amount:  <span style="color:red">@HttpContext.Session.GetString("totalPrice")</span></div>
+        <div id="cart-summary-content">Total amount:  <span style="color:red">@totalPrice</span></div>
     </div>
     <form method="post">
         <div id="customer-info">
@@ -115,10 +121,10 @@
         </div>
         <div id="cart-order">
             @{
-                if (HttpContext.Session.GetString("CartSession") != null)
+                if (cooieValue != null)
                 {
-                    var carts = JsonSerializer.Deserialize<List<MyRazorPage.Models.CartItem>>(HttpContext.Session.GetString("CartSession"));
-                    if (carts.Count > 0)
+
+                    if (CartItemsCookie.Count > 0)
                     {
                         <button style="width: 200px; height:40px;margin:20px 20px 20px" class="btn btn-danger" type="submit">ORDER</button>
                     }

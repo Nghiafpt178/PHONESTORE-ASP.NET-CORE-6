@@ -51,9 +51,28 @@ namespace MyRazorPage.Pages.Account
 
         }
 
+        public int RandomEID()
+        {
+            int eidSales = 0;
+            Random rnd = new Random();
+            var employees = db.Employees.ToList();
+            var minEID = db.Employees.Min(e => e.EmployeeId);
+            var maxEID = db.Employees.Max(e => e.EmployeeId);
+            foreach (var employee in employees)
+            {
+                eidSales = rnd.Next(minEID, maxEID);
+            }
+
+            return eidSales;
+        }
+
         public void OnGet()
         {
-
+            if (HttpContext.Session.GetString("account") != null)
+            {
+                var acc = JsonSerializer.Deserialize<Models.Account>(HttpContext.Session.GetString("account"));
+                Customer = db.Customers.SingleOrDefault(x => x.CustomerId == acc.CustomerId);
+            }
         }
         public void CookieHandle(List<CartItem> myCart)
         {
@@ -90,19 +109,15 @@ namespace MyRazorPage.Pages.Account
 
                     };
                     myCart.Add(item);
-                    decimal totalPrice = 0;
-                    foreach (var p in myCart)
-                    {
-                        totalPrice += p.TotalPrice;
-                    }
-                    HttpContext.Session.SetString("totalPrice", JsonSerializer.Serialize(totalPrice));
+                    
+                   
                 }
                 else
                 {
                     item.Quantity++;
                 }
                 CookieHandle(myCart);
-                HttpContext.Session.SetString("CartSession", JsonSerializer.Serialize(myCart));
+                //HttpContext.Session.SetString("CartSession", JsonSerializer.Serialize(myCart));
             }
             return RedirectToPage("/account/cart");
 
@@ -142,7 +157,7 @@ namespace MyRazorPage.Pages.Account
                     db.SaveChanges();
                 }
                 HttpContext.Session.Remove("CartSession");
-                HttpContext.Session.Remove("totalPrice");
+           
                 TempData["msgOrder"] = "Order successful";
 
 
@@ -184,11 +199,18 @@ namespace MyRazorPage.Pages.Account
                     };
                     db.OrderDetails.Add(orderDetails);
                     db.SaveChanges();
-                }
-                HttpContext.Session.Remove("CartSession");
-                HttpContext.Session.Remove("totalPrice");
-                TempData["msgOrder"] = "Order successful";
+                }                            
             }
+            //remove cookie handle
+            string key = CART_COOKIE_NAME;
+            string value = "";
+            CookieOptions cookieOptions = new CookieOptions
+            {
+                Expires = DateTime.Now.AddDays(-1)
+
+            };
+            HttpContext.Response.Cookies.Append(key, value, cookieOptions);
+            TempData["msgOrder"] = "Order successful";
             return RedirectToPage("/account/cart");
 
 
