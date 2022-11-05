@@ -1,0 +1,46 @@
+﻿@page
+@model MyRazorPage.Pages.Admin.Order.DetailsModel
+@{
+}
+<div id="content-right">
+    <div class="path-admin">ORDER DETAIL</b></div>
+    <div class="content-main">
+        <div id="content-main-dashboard">
+            <div>
+                <div class="profile-order-title">
+                    <div class="profile-order-title-left">
+                        <div>OrderID: #@Model.Order.OrderId</div>
+                        <div>Order creation date: @Model.Order.OrderDate</div>
+                    </div>
+                    <div class="profile-order-title-right">
+                        @if( Model.Order.ShippedDate != null){
+                            <span style="color: green;">Completed</span>
+                        }@if(Model.Order.RequiredDate == null && Model.Order.ShippedDate == null){
+                            <span style="color: red;">Canceled</span>
+                        }@if (Model.Order.RequiredDate != null && Model.Order.ShippedDate == null)
+                        {
+                            <span style="color: blue;">Pending | <a asp-page="/admin/order/index" asp-page-handler="ChangeStatusHandler" asp-route-oid="@Model.Order.OrderId" >Cancel</a></span>
+                        }
+                        
+                    </div>
+                </div>
+                @foreach(var item in Model.OrderDetails){
+                    <div class="profile-order-content" style="background-color: white;">
+                        <div class="profile-order-content-col1">
+                            <a href="detail.html"><img src="~/img/2.jpg" width="100%" /></a>
+                        </div>
+                        <div class="profile-order-content-col2">@item.Product.ProductName</div>                     
+                        <div class="profile-order-content-col3">Quantity: @item.Quantity</div>
+                        <div class="profile-order-content-col4">@item.UnitPrice $</div>
+                    </div>
+                }
+                <div class="profile-order-content" style="background-color: white;">
+                    <div class="profile-order-content-col1"></div>
+                    <div class="profile-order-content-col2"></div>
+                    <div class="profile-order-content-col3"></div>              
+                    <div class="profile-order-content-col4">Total: @Model.TotalPrice  </div>
+                </div>             
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,78 @@
+﻿@page
+@model MyRazorPage.Pages.Admin.Customer.IndexModel
+@{
+     var currentPage = Model.PageIndex;
+    var totalPage = Model.PageTotal;
+    int gap = 2;
+    var start = (currentPage - gap) <= 0 ? 1 : (currentPage - gap);
+    var end = (currentPage + gap) > totalPage ? totalPage : (currentPage + gap);
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="~/css/style.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+<body>
+    <div id="content-right">
+        <div class="path-admin">ORDERS LIST</b></div>
+        <div class="content-main">
+            <div id="content-main-dashboard">            
+                <div style="width : 40%; margin: 10px 10px 10px 10px" id="product-title-2">
+                    <form method="get">                       
+                        <input type="text" value="@ViewData["searchKey"]" name="searchString" placeholder="Enter contact name to search" />
+                        <input type="submit" value="Search" />
+                    </form>
+                </div>
+                <div id="order-table">
+                    <table id="orders">
+                        <tr>
+                            <th>CustomerID</th>
+                            <th>CompanyName</th>
+                            <th>ContactName</th>
+                            <th>ContactTitle</th>
+                            <th>Address</th>
+                            <th>CreateDate</th>
+                        </tr>
+                        @foreach (var item in Model.Customers)
+                        {
+                            <tr>
+                                <td>@item.CustomerId</td>
+                                <td>@item.CompanyName</td>
+                                <td>@item.ContactName</td>
+                                <td>@item.ContactTitle</td>
+                                <td>@item.Address</td>
+                                <td>@item.CreateDate</td>                     
+                            </tr>
+                        }
+
+
+                    </table>
+                </div>
+                <div id="paging">
+                    <div class="pagination">
+                        @if (currentPage > 1)
+                        {
+                            <a asp-page="/admin/customer/index" asp-route-pageIndex="@(currentPage - 1)"  asp-route-searchString="@ViewData["searchKey"]">&laquo;</a>
+                        }
+                        @for (var i = start; i <= end; i++)
+                        {
+                            <a asp-page="/admin/customer/index" asp-route-pageIndex="@i" class="@(i == currentPage ? "active" : "")" asp-route-searchString="@ViewData["searchKey"]"> @i </a>
+                        }
+                        @if (currentPage + gap < totalPage)
+                        {
+                            <a asp-page="/admin/customer/index" asp-route-pageIndex="@(currentPage + 1)" asp-route-searchString="@ViewData["searchKey"]">&raquo;</a>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

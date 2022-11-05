@@ -1,0 +1,22 @@
+﻿@using System.Security.Claims
+@{
+    
+    //var acc = Context.Session.GetString("account");
+    //if(acc != null){
+    //    var user = JsonSerializer.Deserialize<MyRazorPage.Models.Account>(acc);
+    //    if(user != null && user.Role == 1){
+    //        pageLayout = "_Layout2";
+    //    }
+        
+    //}
+    string pageLayout = "_Layout1";
+    if (User.Identity.IsAuthenticated)
+    {
+        var role = Context.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Role);
+        if (role != null && role.Value.Equals("1"))
+        {
+            pageLayout = "_Layout2";
+        }
+    }
+    Layout = pageLayout;
+}

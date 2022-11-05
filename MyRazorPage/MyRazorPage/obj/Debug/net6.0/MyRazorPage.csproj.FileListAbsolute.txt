@@ -1,0 +1,151 @@
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\bin\Debug\net6.0\appsettings.Development.json
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\bin\Debug\net6.0\appsettings.json
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\bin\Debug\net6.0\MyRazorPage.staticwebassets.runtime.json
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\bin\Debug\net6.0\MyRazorPage.exe
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\bin\Debug\net6.0\MyRazorPage.deps.json
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\bin\Debug\net6.0\MyRazorPage.runtimeconfig.json
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\bin\Debug\net6.0\MyRazorPage.dll
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\bin\Debug\net6.0\MyRazorPage.pdb
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.csproj.AssemblyReference.cache
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.GeneratedMSBuildEditorConfig.editorconfig
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.AssemblyInfoInputs.cache
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.AssemblyInfo.cs
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.csproj.CoreCompileInputs.cache
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.MvcApplicationPartsAssemblyInfo.cache
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.RazorAssemblyInfo.cache
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.RazorAssemblyInfo.cs
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\obj\Debug\net6.0\staticwebassets.build.json
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\obj\Debug\net6.0\staticwebassets.development.json
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\obj\Debug\net6.0\scopedcss\bundle\MyRazorPage.styles.css
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.dll
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\obj\Debug\net6.0\refint\MyRazorPage.dll
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.pdb
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.genruntimeconfig.cache
+D:\Demo\2022_Fall\PRN221\SE1513\ASP_NET_RazorPage\MyRazorPage\MyRazorPage\obj\Debug\net6.0\ref\MyRazorPage.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\appsettings.Development.json
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\appsettings.json
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\libman.json
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\MyRazorPage.staticwebassets.runtime.json
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\MyRazorPage.exe
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\MyRazorPage.deps.json
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\MyRazorPage.runtimeconfig.json
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\MyRazorPage.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\MyRazorPage.pdb
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Humanizer.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.csproj.AssemblyReference.cache
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.AssemblyInfoInputs.cache
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.AssemblyInfo.cs
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.csproj.CoreCompileInputs.cache
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.MvcApplicationPartsAssemblyInfo.cache
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.RazorAssemblyInfo.cache
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.RazorAssemblyInfo.cs
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\staticwebassets.build.json
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\staticwebassets.development.json
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\scopedcss\bundle\MyRazorPage.styles.css
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.csproj.CopyComplete
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\refint\MyRazorPage.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.pdb
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.genruntimeconfig.cache
+D:\FPT UNIVERSITY\Semester7\PRN221\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\ref\MyRazorPage.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\appsettings.Development.json
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\appsettings.json
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\libman.json
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\MyRazorPage.staticwebassets.runtime.json
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\MyRazorPage.exe
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\MyRazorPage.deps.json
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\MyRazorPage.runtimeconfig.json
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\MyRazorPage.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\MyRazorPage.pdb
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\EPPlus.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\EPPlus.Interfaces.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\EPPlus.System.Drawing.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Humanizer.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.csproj.AssemblyReference.cache
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.AssemblyInfoInputs.cache
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.AssemblyInfo.cs
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.csproj.CoreCompileInputs.cache
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.MvcApplicationPartsAssemblyInfo.cache
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.RazorAssemblyInfo.cache
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.RazorAssemblyInfo.cs
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\staticwebassets.build.json
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\staticwebassets.development.json
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\scopedcss\bundle\MyRazorPage.styles.css
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.csproj.CopyComplete
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\refint\MyRazorPage.dll
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.pdb
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\MyRazorPage.genruntimeconfig.cache
+D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\obj\Debug\net6.0\ref\MyRazorPage.dll

@@ -1,0 +1,113 @@
+﻿@page
+@model MyRazorPage.Pages.Admin.Order.IndexModel
+@{
+    var currentPage = Model.PageIndex;
+    var totalPage = Model.PageTotal;
+    int gap = 1;
+    var start = (currentPage - gap) <= 0 ? 1 : (currentPage - gap);
+    var end = (currentPage + gap) > totalPage ? totalPage : (currentPage + gap);
+    int total = Model.Orders.Count;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="~/css/style.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+<body>
+    <div id="content-right">
+        <div class="path-admin">ORDERS LIST</b></div>
+        <div class="content-main">
+            <div id="content-main-dashboard">
+                <div id="order-title">
+                    <b>Filter by Order date:</b>
+                    <form onsubmit="return validateForm()" method="get">
+                        From: <input id="dFrom" value="@ViewData["dateFrom"]" required type="date" name="dateFrom" />
+                        To: <input id="dTo" value="@ViewData["dateTo"]" required type="date" name="dateTo" />
+                        <input type="submit" value="Filter">
+                    </form>
+                </div>
+               @* <div id="content-main-dashboard">
+                    <div id="order-title">
+                        <form method="get">
+                        </form>
+                    </div>
+                </div>*@
+
+                <div id="order-table">
+                    <table id="orders">
+                        <tr>
+                            <th>OrderID</th>
+                            <th>OrderDate</th>
+                            <th>RequiredDate</th>
+                            <th>ShippedDate</th>
+                            <th>Employee</th>
+                            <th>Customer</th>
+                            <th>Freight($)</th>
+                            <th>Status</th>
+                        </tr>
+                        @foreach (var item in Model.Orders)
+                        {
+                            <tr>
+                                <td><a asp-page="/admin/order/details" asp-route-oid="@item.OrderId">@item.OrderId</a></td>
+                                <td>@item.OrderDate</td>
+                                <td>@item.RequiredDate</td>
+                                <td>@item.ShippedDate</td>
+                                <td>@item.Employee.FirstName</td>
+                                <td>@item.Customer.ContactName</td>
+                                <td>@item.Freight</td>
+                                @if (item.RequiredDate != null && item.ShippedDate == null)
+                                {
+                                    <td style="color: blue;">Pending | <a asp-page="/admin/order/index" asp-page-handler="ChangeStatusHandler" asp-route-oid="@item.OrderId">Cancel</a></td>
+                                }@if (item.ShippedDate != null)
+                                {
+                                    <td style="color: green;"><a>Completed</a></td>
+                                }
+                                @if (item.RequiredDate == null && item.ShippedDate == null)
+                                {
+                                    <td style="color: red;">Canceled</td>
+                                }
+
+                            </tr>
+                        }
+
+
+                    </table>
+                </div>
+                <div id="paging">
+                    <div class="pagination">
+                        @if (currentPage > 1)
+                        {
+                            <a asp-page="/admin/order/index" asp-route-pageIndex="@(currentPage - 1)" asp-route-dateFrom="@ViewData["dateFrom"]" asp-route-dateTo="@ViewData["dateTo"]">&laquo;</a>
+                        }
+                        @for (var i = start; i <= end; i++)
+                        {
+                            <a asp-page="/admin/order/index" asp-route-pageIndex="@i" class="@(i == currentPage ? "active" : "")" asp-route-dateFrom="@ViewData["dateFrom"]" asp-route-dateTo="@ViewData["dateTo"]"> @i </a>
+                        }
+                        @if (currentPage < totalPage - 1)
+                        {
+                            <a asp-page="/admin/order/index" asp-route-pageIndex="@(currentPage + 1)" asp-route-dateFrom="@ViewData["dateFrom"]" asp-route-dateTo="@ViewData["dateTo"]">&raquo;</a>
+                        }
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    function validateForm() {
+        var dateFrom = document.getElementById('dFrom').value;
+        var dateTo = document.getElementById('dTo').value;
+        if (dateFrom > dateTo) {
+            alert("Date from must before date to!");
+            return false;
+        }
+    }
+</script>
+</html>

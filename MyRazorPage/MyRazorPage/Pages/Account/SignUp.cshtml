@@ -1,0 +1,54 @@
+﻿@page
+@model MyRazorPage.Pages.Account.SignUpModel
+@{
+}
+<div id="form">
+    <div id="form-title">
+        <span><a asp-page="signup" style="color: red;">SIGN UP</a></span>
+        <span><a asp-page="signin">SIGN IN</a></span>     
+    </div>
+    <div id="form-content">
+        <div class="msg-error" style="text-align:left">
+            @ViewData["msg"]
+        </div>
+        <form  method="post">
+            <input asp-for="Customer.CustomerId" type="hidden" value="1" /><br />
+            <label>Company name<span style="color: red;">*</span></label><br />
+            <input asp-for="Customer.CompanyName" type="text" /><br />
+            <span asp-validation-for="Customer.CompanyName" class="msg-error"></span><br />
+            <label>Contact name<span style="color: red;">*</span></label><br />
+            <input asp-for="Customer.ContactName" type="text" /><br />
+            <span asp-validation-for="Customer.ContactName" class="msg-error"></span><br />
+            <label>Contact title<span style="color: red;">*</span></label><br />
+            <input asp-for="Customer.ContactTitle" type="text" /><br />
+            <span asp-validation-for="Customer.ContactTitle" class="msg-error"></span><br />
+            <label>Address<span style="color: red;">*</span></label><br />
+            <input asp-for="Customer.Address" type="text" /><br />
+            <span asp-validation-for="Customer.Address" class="msg-error"></span><br />
+            <label>Email<span style="color: red;">*</span></label><br />
+            <input asp-for="Account.Email" type="text" /><br />
+            <span asp-validation-for="Account.Email" class="msg-error"></span><br />
+            <label>Password<span style="color: red;">*</span></label><br />
+            <input id="password" asp-for="Account.Password" type="password"  /><br />
+            <span asp-validation-for="Account.Password" class="msg-error"></span><br />
+            <label>Re-Password<span style="color: red;">*</span></label><br />
+            <input id="repassword" type="password"  /><br />
+            <span id="message"></span><br />
+            <span class="msg-error"></span><br />
+            <div></div>
+            <input type="submit" onclick="matchPassword()" value="SIGN UP" style="margin-bottom: 30px;" />
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+    function matchPassword() {
+        var pw1 = document.getElementById("password").value;
+        var pw2 = document.getElementById("repassword").value;
+        if (pw1 != pw2) {
+            alert('Repassword not matching')
+        } else {
+           
+        }
+    }
+
+</script>

@@ -1,0 +1,120 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MyRazorPage
+build_property.RootNamespace = MyRazorPage
+build_property.ProjectDir = D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\FPT UNIVERSITY\Semester7\PRN221\SOURE_PROJECT\PRN221_RazorPages\PRN221_RazorPages\MyRazorPage\MyRazorPage
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjZXNzRGVuaWVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Account/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxDYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Account/Forgot.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxGb3Jnb3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Account/Orders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxPcmRlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Account/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Account/SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxTaWduSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Account/SignOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxTaWduT3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Account/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxTaWduVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Admin/Board.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Admin/Customer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ3VzdG9tZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Admin/DashBoard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGFzaEJvYXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Admin/Order/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cT3JkZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Admin/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Admin/Product/AddProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdFxBZGRQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Admin/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Admin/Product/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Admin/Product/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Admin/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Admin/Product/Manager.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdFxNYW5hZ2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Product/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Product/Products.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxQcm9kdWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Shared/_Layout1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/Shared/_Layout2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT UNIVERSITY/Semester7/PRN221/SOURE_PROJECT/PRN221_RazorPages/PRN221_RazorPages/MyRazorPage/MyRazorPage/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
