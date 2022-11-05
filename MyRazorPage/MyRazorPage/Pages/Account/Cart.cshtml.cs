@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using MyRazorPage.Models;
+using SelectPdf;
 using System.Security.Principal;
 using System.Text;
 using System.Text.Json;
@@ -66,13 +67,25 @@ namespace MyRazorPage.Pages.Account
             return eidSales;
         }
 
-        public void OnGet()
+        public IActionResult OnGet(string html)
         {
+            if(html != null)
+            {
+                html = html.Replace("strtTag", "<").Replace("EndTag",">");
+                HtmlToPdf objhtml = new HtmlToPdf();
+                PdfDocument objdoc = objhtml.ConvertHtmlString(html);
+                byte[] pdf = objdoc.Save();
+                objdoc.Close();
+
+                return File(pdf,"application/pdf","Invoice.pdf");
+
+            }
             if (HttpContext.Session.GetString("account") != null)
             {
                 var acc = JsonSerializer.Deserialize<Models.Account>(HttpContext.Session.GetString("account"));
                 Customer = db.Customers.SingleOrDefault(x => x.CustomerId == acc.CustomerId);
             }
+            return Page();
         }
         public void CookieHandle(List<CartItem> myCart)
         {
@@ -329,6 +342,8 @@ namespace MyRazorPage.Pages.Account
             }
 
         }
+
+       
 
 
     }
