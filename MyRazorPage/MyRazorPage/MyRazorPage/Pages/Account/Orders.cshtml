@@ -1,0 +1,86 @@
+﻿@page
+@model MyRazorPage.Pages.Account.OrdersModel
+@{
+}
+@*<style>
+    .divToggle{
+        display: none;
+    }
+</style>*@
+<div id="content-left">
+    <h3 style="font-weight: normal;">Welcome, @Model.Account.Email</h3>
+    <h3>Account Management</h3>
+    <ul>
+        <a asp-page="/account/profile">
+        <li>Personal information</li></a>
+    </ul>
+    <h3>My order</h3>
+    <ul>
+        <a asp-page="/account/orders">
+        <li>All orders</li></a>
+        <a href="#">
+        <li>Canceled order</li></a>
+    </ul>
+</div>
+<div id="content-right">
+    <div class="path">LIST ORDERS</b></div>
+    <div class="content-main">
+        <div id="profile-content-order">
+            @foreach (var item in Model.Orders)
+            {
+                <div>
+                    <div class="profile-order-title">
+                        <div class="profile-order-title-left">
+                            <div>Order creation date: 27-9-2022</div>
+                            <div>Order: <a href="#">@item.OrderId</a></div>
+                        </div>
+                        <div class="profile-order-title-right">
+                            <span>Pending</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button onclick="toggleItem(@item.OrderId)" value="@item.OrderId">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                             class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                  d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0
+                              1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="divToggle" id="@item.OrderId">
+                        @foreach (var item1 in item.OrderDetails)
+                        {
+
+
+                            <div class="profile-order-content">
+                                <div class="profile-order-content-col1">
+                                    <a href="detail.html"><img src="~/img/2.jpg" width="100%" /></a>
+                                </div>
+                                <div class="profile-order-content-col2">@item1.ProductId</div>
+                                <div class="profile-order-content-col3">Quantity: @item1.Quantity</div>
+                                <div class="profile-order-content-col4">@item1.UnitPrice $</div>
+                            </div>
+
+
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+    function toggleItem(orderID) {
+        //console.log(orderID);
+        var item = document.getElementById(orderID);
+        if (item.style.display === "none") {
+            item.style.display = "block";
+        } else {
+            item.style.display = "none";
+        }
+    }
+</script>
+
+

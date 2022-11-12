@@ -1,0 +1,66 @@
+﻿@using MyRazorPage.Models
+@using System.Security.Claims
+@{
+     string key = "CartCookie";
+    var cooieValue = Context.Request.Cookies[key];
+    var CartItemsCookie = new List<CartItem>();
+    if(cooieValue != null){
+        CartItemsCookie = JsonSerializer.Deserialize<List<CartItem>>(cooieValue);
+    }
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="logo">
+                <a href="~/index"><img src="~/img/logo.png" /></a>
+            </div>
+            <div id="banner">
+                <ul>
+                    @if (cooieValue != null)
+                    {
+                        //var carts = JsonSerializer.Deserialize<List<CartItem>>(Context.Session.GetString("CartSession"));
+                        <li><a href="~/account/cart">Cart: @CartItemsCookie.Count</a></li>
+                    }
+                    else
+                    {
+                        <li><a href="~/account/cart">Cart: 0</a></li>
+                    }
+                    @if(User.Identity.IsAuthenticated)
+                    {
+                        var email = Context.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Email);
+                        if(email.Value != null){
+                            <span>Welcome: @email.Value</span>
+                            <li><a href="~/account/signout">SignOut</a></li>
+                            <li><a asp-page="/account/profile">Profile</a></li>
+                        }
+                       
+                    }
+                    else
+                    {
+                        <li><a href="~/account/signin">SignIn</a></li>
+                        <li><a href="~/account/signUp">SignUp</a></li>
+                    }
+
+
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            @RenderBody()
+        </div>
+       
+        <div id="footer">footer</div>
+    </div>
+</body>
+</html>

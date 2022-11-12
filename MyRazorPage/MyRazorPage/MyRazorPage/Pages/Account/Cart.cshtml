@@ -1,0 +1,149 @@
+﻿@page
+@using MyRazorPage.Models
+@model MyRazorPage.Pages.Account.CartModel
+@{
+    Layout = "_Layout1";
+    string key = "CartCookie";
+    var cooieValue = Request.Cookies[key];
+    var CartItemsCookie = new List<CartItem>();
+    decimal totalPrice = 0;
+    if (cooieValue != null)
+    {
+        CartItemsCookie = JsonSerializer.Deserialize<List<CartItem>>(cooieValue);
+        foreach (var p in CartItemsCookie)
+        {
+            totalPrice += p.TotalPrice;
+        }
+    }
+
+}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<div id="cart">
+    <div id="cart-title">
+        <h3>SHOPPING CART</h3>
+        @*<button id="btnExportInvoice" class="btn btn-danger">EXPORT PDF</button>*@
+    </div>
+    <div class="cart-item-function">
+        <span class="msg-error">@TempData["outOfStockMsg"]</span>
+    </div>
+    <div id="cart-title">
+        <h3>@TempData["msgOrder"]</h3>
+    </div>
+    <div class="exportInvoice">
+        <div id="cart-content">
+            @if (cooieValue != null)
+            {
+                if (CartItemsCookie != null)
+                {
+                    //var carts = JsonSerializer.Deserialize<List<MyRazorPage.Models.CartItem>>(HttpContext.Session.GetString("CartSession"));
+                    foreach (var item in Model.CartItems)
+                    {
+                        <div class="cart-item">
+                            <div class="cart-item-infor">
+                                <div class="cart-item-img">
+                                    <img src="~/img/1.jpg" />
+                                </div>
+                                <div class="cart-item-name">
+                                    <a href="detail.html?id=1">@item.ProductName</a>
+                                </div>
+                                <div class="cart-item-price">
+                                    @item.TotalPrice
+                                </div>
+                                <div class="cart-item-button">
+                                    <a asp-page-handler="RemoveHandler" asp-page="/account/cart" asp-route-pid="@item.ProductId">Remove</a>
+                                </div>
+                            </div>
+                            <div class="cart-item-function">
+                                <a asp-page="/account/cart" asp-page-handler="DecreaseHandler" asp-route-pid="@item.ProductId">-</a>
+                                <a asp-page="/account/cart" asp-page-handler="IncreaseHandler" asp-route-pid="@item.ProductId">+</a>
+                                <input min="1" type="text" value="@item.Quantity" disabled />
+                            </div>
+
+                        </div>
+                    }
+                }
+
+            }
+            else
+            {
+                <h4>Cart empty!</h4>
+            }
+        </div>
+        <div id="cart-summary">
+            <div id="cart-summary-content">Total amount:  <span style="color:red">@totalPrice</span></div>
+        </div>
+        <form method="post">
+            <div id="customer-info">
+                <div id="customer-info-content">
+                    <h3>CUSTOMER INFORMATION:</h3>
+                    @if (HttpContext.Session.GetString("account") != null)
+                    {
+                        <div id="customer-info-detail">
+                            <div id="customer-info-left">
+                                <input disabled value="@Model.Customer.CompanyName" type="text" placeholder="Company name *" /><br />
+                                <input disabled value="@Model.Customer.ContactName" type="text" placeholder="Contact name *" /><br />
+                            </div>
+                            <div id="customer-info-right">
+                                <input disabled value="@Model.Customer.ContactTitle" type="text" placeholder="Contact title *" /><br />
+                                <input disabled value="@Model.Customer.Address" type="text" placeholder="Address *" /><br />
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div id="customer-info-detail">
+                            <div id="customer-info-left">
+                                <input required asp-for="Customer.CompanyName" type="text" placeholder="Company name *" /><br />
+                                <input required asp-for="Customer.ContactName" type="text" placeholder="Contact name *" /><br />
+                            </div>
+                            <div id="customer-info-right">
+                                <input required asp-for="Customer.ContactTitle" type="text" placeholder="Contact title *" /><br />
+                                <input required asp-for="Customer.Address" type="text" placeholder="Address *" /><br />
+                            </div>
+                        </div>
+                    }
+                </div>
+
+            </div>
+            <div id="customer-info">
+                <div id="customer-info-content">
+                    <h3>PAYMENT METHODS:</h3>
+                    <div id="customer-info-payment">
+                        <div>
+                            <input type="radio" name="rbPaymentMethod" checked />
+                            Payment C.O.D - Payment on delivery
+                        </div>
+                        <div>
+                            <input type="radio" name="rbPaymentMethod" disabled />
+                            Payment via online payment gateway
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cart-order">
+                @{
+                    if (cooieValue != null)
+                    {
+
+                        if (CartItemsCookie.Count > 0)
+                        {
+                            <button style="width: 200px; height:40px;margin:20px 20px 20px" class="btn btn-danger" type="submit">ORDER</button>
+                        }
+                    }
+                }
+            </div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+    $("#btnExportInvoice").click(function () {
+        //alert('clicked');
+        var htmldata = $(".exportInvoice").html();
+        htmldata = htmldata.replace(/</g, "strtTag").replace(/>/g, "EndTag");
+        window.location = window.location.origin + "/account/cart/?html=" + htmldata;
+    });
+
+</script>

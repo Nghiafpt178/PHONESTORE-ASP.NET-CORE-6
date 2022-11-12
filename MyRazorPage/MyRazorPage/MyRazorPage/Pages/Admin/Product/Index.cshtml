@@ -1,0 +1,74 @@
+﻿@page
+@model MyRazorPage.Pages.Product.IndexModel
+@{
+}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+<h3>List of Products</h3>
+<a asp-page="/admin/product/create">Add Product</a>
+<table id="table-products">
+    <thead>
+        <tr>
+            <th>            
+                    ProductID                   
+            </th>
+            <th>            
+                    ProductName                 
+            </th>
+            <th>
+                Category Name
+            </th>
+            @*<th>QuantityPerUnit</th>
+            <th>
+               UnitPrice
+            </th>
+            <th>UnitsInStock</th>
+            <th>UnitsOnOrder</th>
+            <th>ReorderLevel</th>
+            <th>Discontinued</th>*@
+            @*<th>Action</th>
+            <th></th>*@
+        </tr>
+    </thead>
+    <tbody id="tableBody">
+        @foreach (var item in Model.Products)
+        {
+            <tr>
+                <td>@item.ProductId</td>
+                <td>@item.ProductName</td>
+                <td>@item.Category.CategoryName</td>
+               @* <td>@item.QuantityPerUnit</td>
+                <td>@item.UnitPrice</td>
+                <td>@item.UnitsInStock</td>
+                <td>@item.UnitsOnOrder</td>
+                <td>@item.ReorderLevel</td>
+                <td>@item.Discontinued</td>*@
+                @*<td>Edit</td>
+                <td>Delete</td>*@
+            </tr>
+        }
+    </tbody>
+    
+</table>
+
+

@@ -2,6 +2,7 @@
 @using MyRazorPage.Models
 @model MyRazorPage.Pages.Account.CartModel
 @{
+    Layout = "_Layout1";
     string key = "CartCookie";
     var cooieValue = Request.Cookies[key];
     var CartItemsCookie = new List<CartItem>();
@@ -22,7 +23,7 @@
 <div id="cart">
     <div id="cart-title">
         <h3>SHOPPING CART</h3>
-        <button id="btnExportInvoice" class="btn btn-danger">EXPORT PDF</button>
+        @*<button id="btnExportInvoice" class="btn btn-danger">EXPORT PDF</button>*@
     </div>
     <div class="cart-item-function">
         <span class="msg-error">@TempData["outOfStockMsg"]</span>

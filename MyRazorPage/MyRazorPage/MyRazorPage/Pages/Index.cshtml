@@ -1,0 +1,57 @@
+﻿@page
+@model MyRazorPage.Pages.IndexModel
+@{
+    Layout = "_Layout1";
+}
+
+<div id="content-left">
+    <h3><a href="/index">CATEGORY</a></h3>
+    <ul>
+        @foreach(var item in Model.Categories){
+            <a href="/product/products/@item.CategoryId">
+            <li>@item.CategoryName</li></a>
+        }
+    </ul>
+</div>
+<div id="content-right">
+    <div class="path">Hot Products</b></div>
+    <div style="margin:10px 0px 20px" class="content-main">
+        @foreach (var item in Model.HotProducts)
+        {
+            <div style="width:22%;" class="product">
+                <a asp-page="/product/detail" asp-route-pid="@item.ProductId"><img src="img/1.jpg" width="100%" /></a>
+                <div class="name"><a asp-page="/product/detail" asp-route-pid="@item.ProductId">@item.ProductName</a></div>
+                <div class="price">@item.UnitPrice</div>
+                <div><a href="">Buy now</a></div>
+            </div>
+        }
+
+
+    </div>
+    <div class="path">Best Sale</b></div>
+    <div style="margin:10px 0px 20px"  class="content-main">
+        @foreach (var item in Model.BestSaleProducts)
+        {
+            <div style="width:22%" class="product">
+                <a asp-page="/product/detail" asp-route-pid="@item.ProductId"><img src="img/2.jpg" width="100%" /></a>
+                <div class="name"><a asp-page="/product/detail" asp-route-pid="@item.ProductId">@item.ProductName</a></div>
+                <div class="price">@item.UnitPrice</div>
+                <div><a href="">Buy now</a></div>
+            </div>
+        }
+       
+        
+    </div>
+    <div class="path">New Product</b></div>
+    <div style="margin:10px 0px 20px" class="content-main">
+        @foreach (var item in Model.NewProducts)
+        {
+            <div style="width:22%" class="product">
+                <a asp-page="/product/detail" asp-route-pid="@item.ProductId"><img src="img/phone1.jpg" width="100%" /></a>
+                <div class="name"><a asp-page="/product/detail" asp-route-pid="@item.ProductId">@item.ProductName</a></div>
+                <div class="price">@item.UnitPrice</div>
+                <div><a asp-page="/account/cart" asp-route-pid="@item.ProductId">Buy now</a></div>
+            </div>
+        }
+    </div>
+</div>

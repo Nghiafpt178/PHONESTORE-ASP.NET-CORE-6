@@ -1,0 +1,145 @@
+﻿@page
+@model MyRazorPage.Pages.Admin.Product.ManagerModel
+@{
+    var currentPage = Model.PageIndex;
+    var totalPage = Model.PageTotal;
+    int gap = 2;
+    var start = (currentPage - gap) <= 0 ? 1 : (currentPage - gap);
+    var end = (currentPage + gap) > totalPage ? totalPage : (currentPage + gap);
+}
+
+<div id="content-right">
+    <div class="path-admin">PRODUCTS LIST</b></div>
+    <div class="content-main">
+        <div id="content-main-dashboard">
+            <div id="product-title-header">
+                <div id="product-title-1" style="width: 25%;">
+                    <b>Filter by Catetory:</b>
+                    <form method="get">
+                        <select name="cateID">
+                            <option>--- Select ---</option>
+                            @foreach (var item in Model.Categories)
+                            {
+                                <option selected="@(item.CategoryId == Model.CurrentFilter)" value="@item.CategoryId">@item.CategoryName</option>
+                            }
+                        </select>
+                        <input type="submit" value="Filter">
+                    </form>
+                </div>
+                <div id="product-title-2" style="width: 55%;">
+                    <form method="get">
+                        <input type="hidden" value="@Model.CurrentFilter" name="cateID" placeholder="Enter product name to search" />
+                        <input type="text" value="@ViewData["key"]" name="searchString" placeholder="Enter product name to search" />
+                        <input type="submit" value="Search" />
+                    </form>
+                </div>
+                <div id="product-title-3" style="width: 20%;">
+                    <a asp-page="/admin/product/addproduct">Create a new Product</a>
+                    <form onsubmit="return Validate(this);" asp-page-handler="ImportData" method="post" enctype="multipart/form-data">
+                        <label for="upload-file">Import .xls or .xlsx file</label>
+                        @*<input type="file" name="file" id="upload-file" />*@
+                        <input required type="file" id="fileImport" name="fileImport"><br>
+                        <input style="margin-bottom: 30px; background-color: pink; color:black;
+                                     border-radius: 10px" value="Import" type="submit">
+                    </form>
+                </div>
+            </div>
+            <div id="order-table-admin">
+                <h4 style="color:red">@TempData["msg"]</h4>
+                <h4 style="color:red">@TempData["msgUpdate"]</h4>
+                
+                <table id="orders">
+                    <tr>
+                        <th>ProductID</th>
+                        <th>ProductName</th>
+                        <th>UnitPrice</th>
+                        <th>Unit</th>
+                        <th>UnitsInStock</th>
+                        <th>Category</th>
+                        <th>Discontinued</th>
+                        <th>Action</th>
+                    </tr>
+                    @foreach (var item in Model.Products)
+                    {
+                        <tr>
+                            <td><a href="#">#@item.ProductId</a></td>
+                            <td>@item.ProductName</td>
+                            <td>@item.UnitPrice</td>
+                            <td>@item.QuantityPerUnit</td>
+                            <td>@item.UnitsInStock</td>
+                            <td>@item.Category.CategoryName</td>
+                            <td>@item.Discontinued</td>
+                            <td>
+                                <a asp-page="/admin/product/edit" asp-route-pid="@item.ProductId">Edit</a> &nbsp;  &nbsp;
+                                <a style="padding: 1px; background-color:gray;" class="btn btn-link"
+                               onclick="ConfirmDelete(@item.ProductId)">
+                                    Delete
+                                </a>
+                            </td>
+                        </tr>
+                    }
+
+
+                </table>
+            </div>
+            <div id="paging">
+                <div class="pagination">
+                    @if (currentPage > 1)
+                    {
+                        <a asp-page="/admin/product/manager" asp-route-pageIndex="@(currentPage - 1)" asp-route-cateID="@Model.CurrentFilter" asp-route-searchString="@ViewData["key"]">&laquo;</a>
+                    }
+                    @for (var i = start; i <= end; i++)
+                    {
+                        <a asp-page="/admin/product/manager" asp-route-pageIndex="@i" class="@(i == currentPage ? "active" : "")" asp-route-cateID="@Model.CurrentFilter" asp-route-searchString="@ViewData["key"]"> @i </a>
+                    }
+                    @if (currentPage + gap < totalPage )
+                    {
+                        <a asp-page="/admin/product/manager" asp-route-pageIndex="@(currentPage + 1)" asp-route-cateID="@Model.CurrentFilter" asp-route-searchString="@ViewData["key"]">&raquo;</a>
+                    }
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function ConfirmDelete(productID) {
+        //console.log(productID);
+        var x = confirm("Are you sure you want to delete?");
+        if (x)
+            window.location.assign("/Admin/product/manager?productID=" + productID)
+        else
+            return false;
+    }
+
+    var _validFileExtensions = [".xls", ".xlsx"];
+    function Validate(oForm) {
+        var arrInputs = oForm.getElementsByTagName("input");
+        for (var i = 0; i < arrInputs.length; i++) {
+            var oInput = arrInputs[i];
+            if (oInput.type == "file") {
+                var sFileName = oInput.value;
+                if (sFileName.length > 0) {
+                    var blnValid = false;
+                    for (var j = 0; j < _validFileExtensions.length; j++) {
+                        var sCurExtension = _validFileExtensions[j];
+                        if (sFileName.substr(sFileName.length - sCurExtension.length, sCurExtension.length).toLowerCase() == sCurExtension.toLowerCase()) {
+                            blnValid = true;
+                            break;
+                        }
+                    }
+
+                    if (!blnValid) {
+                        alert("Sorry, " + sFileName + " is invalid, allowed extensions are: " + _validFileExtensions.join(", "));
+                        return false;
+                    }
+                }
+            }
+        }
+
+        return true;
+    }
+
+
+</script>

@@ -1,0 +1,80 @@
+﻿@page "{cid}"
+@model MyRazorPage.Pages.Product.ProductsModel
+
+@{
+    Layout = "_Layout1";
+    var currentPage = Model.PageIndex;
+    var totalPage = Model.PageTotal;
+    int gap = 1;
+
+    var start = (currentPage - gap) <= 0 ? 1 : (currentPage - gap);
+    var end = (currentPage + gap) > totalPage ? totalPage : (currentPage + gap);
+    int total = Model.Products.Count;
+}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div id="content-left">
+    <h3><a href="/index">CATEGORY</a></h3>
+    <ul>
+        @foreach (var item in Model.Categories)
+        {
+            <a href="/product/products/@item.CategoryId" selected="@RouteData.Values["cid"] == @item.CategoryId">
+            <li>@item.CategoryName</li></a>
+        }
+    </ul>
+</div>
+<div id="content-right">
+    <div class="path">
+        Products
+    </div>
+    <div style="margin: 10px 10px 10px 10px; display: flex">
+        <a style="color : black" asp-page="./products" asp-route-cid=@TempData["cid"] asp-route-sortOrder="@Model.PriceSort">
+            @TempData["SortPrice"]
+            <i class="@TempData["SortIconName"]" style="font-size:20px;color:black"></i>
+        </a>
+    </div>
+    <div style="margin: 10px 10px 10px 10px;">
+        <select onchange="sortPrice(@RouteData.Values["cid"])" id="sortedOrder">
+            <option value="asc" selected="(@Model.CurrentSort.Equals("asc"))"> Ascending </option>
+            <option value="desc" selected="@(@Model.CurrentSort.Equals("desc"))"> Descending </option>>
+        </select>
+    </div>
+    <div class="content-main">
+        @foreach (var item in Model.Products)
+        {
+            <div style="width:22%" class="product">
+                <a asp-page="/product/detail" asp-route-pid="@item.ProductId"><img src="~/img/2.jpg" width="100%" /></a>
+                <div class="name"><a asp-page="/product/detail" asp-route-pid="@item.ProductId">@item.ProductName</a></div>
+                <div class="price">@item.UnitPrice</div>
+                <div><a href="">Buy now</a></div>
+            </div>
+        }
+    </div>
+    <div class="pagination">
+        @if (currentPage - gap > 0)
+        {
+            <a asp-page="/product/products" asp-route-pageIndex="@(currentPage - 1)" asp-route-sortOrder="@(Model.CurrentSort)">&laquo;</a>
+        }
+
+        @for (var i = start; i <= end; i++)
+        {
+            <a asp-page="/product/products" asp-route-pageIndex="@i" class="@(i == currentPage ? "active" : "")" asp-route-sortOrder="@(Model.CurrentSort)"> @i </a>
+        }
+
+        @if (currentPage + gap < totalPage)
+        {
+            <a asp-page="/product/products" asp-route-pageIndex="@(currentPage + 1)" asp-route-sortOrder="@(Model.CurrentSort)"> &raquo;</a>
+        }
+    </div>
+</div>
+
+<script>
+    function sortPrice(cid){
+        var sortOrder = $('#sortedOrder').val();
+       
+        window.location.href = window.location.origin + "/product/products/" + cid + "?sortOrder=" + sortOrder;
+    }
+</script>

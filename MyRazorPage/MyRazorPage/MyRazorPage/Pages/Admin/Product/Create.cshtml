@@ -1,0 +1,36 @@
+﻿@page
+@model MyRazorPage.Pages.Product.CreateModel
+@{
+}
+<h3>Create product</h3>
+<h5><a asp-page="/admin/product/index">Back to list</a></h5>
+<form method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div style="margin-bottom: 40px;" class="form-group">
+        <label asp-for="Product.ProductName" class="control-label"></label>
+        <input asp-for="Product.ProductName" class="form-control" />
+        <span asp-validation-for="Product.ProductName" class="text-danger"></span>
+    </div>
+    <div style="margin-bottom: 40px;" class="form-group">
+        <label asp-for="Product.CategoryId" class="control-label"></label>
+        <select asp-for="Product.CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+    </div>
+    <div style="margin-bottom: 40px;" class="form-group">
+        <label asp-for="Product.UnitPrice" class="control-label"></label>
+        <input asp-for="Product.UnitPrice" class="form-control" />
+        <span asp-validation-for="Product.UnitPrice" class="text-danger"></span>
+    </div>
+    <div style="margin-bottom: 40px;" class="form-group">
+        <label asp-for="Product.QuantityPerUnit" class="control-label"></label>
+        <input asp-for="Product.QuantityPerUnit" class="form-control" />
+        <span asp-validation-for="Product.QuantityPerUnit" class="text-danger"></span>
+    </div>
+    <div style="margin-bottom: 40px;" class="form-group form-check">
+        <label class="form-check-label">
+            <input class="form-check-input" asp-for="Product.Discontinued" /> @Html.DisplayNameFor(model => model.Product.Discontinued)
+        </label>
+    </div>
+    <div style="margin-bottom: 40px;" class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
